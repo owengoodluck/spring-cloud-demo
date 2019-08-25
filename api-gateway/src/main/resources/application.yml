@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: api-gateway
+server:
+  port: 5555
+
+eureka:
+#  instance:
+#    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://peer1:1111/eureka,http://peer2:1112/eureka,
+
+
+zuul:
+  routes:
+    api-a-rul:
+      path: /api-a-url/**
+      url: http://localhost:9000/

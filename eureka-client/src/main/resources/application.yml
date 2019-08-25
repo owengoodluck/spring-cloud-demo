@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello-service
+server:
+  port: 11112
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:1111/eureka,http://peer2:1112/eureka
+    instance:
+      lease-renewal-interval-in-seconds: 10
+    register-with-eureka: true

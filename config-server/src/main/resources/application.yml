@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:
+          searchPaths:
+          username:
+          password:
+server:
+  port: 7001
+
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    service-url:
+#      defaultZone: http://peer1:1111/eureka
+#    instance:
+#      lease-renewal-interval-in-seconds: 10
