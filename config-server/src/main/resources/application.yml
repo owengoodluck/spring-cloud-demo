@@ -5,10 +5,10 @@ spring:
     config:
       server:
         git:
-          uri:
-          searchPaths:
-          username:
-          password:
+          uri: https://github.com/owengoodluck/spring-cloud-demo.git
+          searchPaths: config-repo
+#          username:
+#          password:
 server:
   port: 7001
 
